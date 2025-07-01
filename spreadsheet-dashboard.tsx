@@ -232,41 +232,41 @@ export default function Component() {
             <Table>
               <TableHeader>
                 {/* First Row with Action Buttons */}
-                <TableRow className="bg-[#f8fafc] border-b border-[#e2e2e2] divide-x divide-[#e2e2e2]">
+                <TableRow className="bg-[#f8fafc] border-b  border-[#e2e2e2] divide-x divide-[#e2e2e2]">
                   <TableHead className="col-span-1" />
-                  <TableHead className="w-8 bg-[#E2E8F0]" colSpan={4} >
-                    <div className="flex items-center bg-[#E2E8F0] p-1 mr-4">
+                  <TableHead className="w-8 bg-[#E2E8F0] hover:bg-[#d5e0ec]"  colSpan={4} >
+                    <div className="flex items-center p-1 mr-4">
                       <Link2 className="w-4 h-4 text-[#4a7bf9] mr-2" />
                       <span className="text-sm text-[#757575]">Q3 Financial Overview</span>
                       <RefreshCcw className="w-4 h-4 text-[#f18723] ml-2 cursor-pointer hover:text-[#121212]" />
                     </div>
                   </TableHead>
                  <TableHead className="col-span-1 " />
-                  <TableHead colSpan={1} className="p-0 bg-[#d3f2e3]">
-                    <div className="flex justify-start space-x-2 px-2 py-1">
-                      <Button  size="sm" className="bg-[#d3f2e3] text-[#0a6e3d] hover:bg-[#a3aca3] flex items-center space-x-1">
+                  <TableHead colSpan={1} className="p-0 bg-[#d3f2e3] hover:bg-[#90f5c4]">
+                    <div className="flex justify-center space-x-2 px-2 py-1">
+                      <div className="text-[#0a6e3d]  flex items-center space-x-1">
                         <img src="./arrow.png" alt="" height={16} width={16} />
-                        <span>ABC</span>
+                        <span className="mx-3">ABC</span>
                         <Ellipsis />
-                      </Button> 
+                      </div> 
                     </div>
                   </TableHead>
-                  <TableHead colSpan={2} className="p-0 bg-[#dccffc]">
-                    <div className="flex justify-start space-x-2 px-2 py-1">
-                      <Button size="sm" className="bg-[#dccffc] text-[#463e59] hover:bg-[#a5a3ac] flex items-center space-x-1">
+                  <TableHead colSpan={2} className="p-0 bg-[#dccffc] hover:bg-[#c0a7f4]">
+                    <div className="flex justify-center space-x-2 px-2 py-1">
+                      <div  className="text-[#463e59] flex items-center space-x-1">
                         <img src="./arrow.png" alt="" height={16} width={16} />
-                        <span>Answer a question</span>
+                        <span className="mx-3">Answer a question</span>
                         <Ellipsis />
-                      </Button>
+                      </div>
                     </div>
                   </TableHead>
-                  <TableHead colSpan={1} className="p-0 bg-[#FAC2AF]">
-                    <div className="flex justify-start space-x-2 px-2 py-1">
-                      <Button size="sm" className="bg-[#FAC2AF] text-[#695149] hover:bg-[#aca5a3] flex items-center space-x-1">
+                  <TableHead colSpan={1} className="p-0 bg-[#FAC2AF] hover:bg-[#fca18b]">
+                    <div className="flex justify-center space-x-2 px-2 py-1">
+                      <div className="text-[#695149] flex items-center space-x-1 w-auto">
                         <img src="./arrow.png" alt="" height={16} width={16} />
-                        <span>Extract</span>
+                        <span className="mx-3">Extract</span>
                         <Ellipsis />
-                      </Button>
+                      </div>
                     </div>
                   </TableHead>
                   {/* Fill remaining columns with empty heads if needed */}
