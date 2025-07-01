@@ -100,28 +100,28 @@ const jobData = [
 const getStatusColor = (status: string) => {
   switch (status) {
     case "In-progress":
-      return "bg-[#fff3d6] text-[#85640b] border-[#85640b]"
+      return "bg-[#fff3d6] text-[#85640b] border-0"
     case "Need to start":
-      return "bg-[#e2e8f0] text-[#475569] border-[#475569]"
+      return "bg-[#e2e8f0] text-[#475569] border-0"
     case "Complete":
-      return "bg-[#d3f2e3] text-[#0a6e3d] border-[#0a6e3d]"
+      return "bg-[#d3f2e3] text-[#0a6e3d] border-0"
     case "Blocked":
-      return "bg-[#ffe1de] text-[#c22219] border-[#c22219]"
+      return "bg-[#ffe1de] text-[#c22219] border-0"
     default:
-      return "bg-[#f6f6f6] text-[#757575] border-[#757575]"
+      return "bg-[#f6f6f6] text-[#757575] border-0"
   }
 }
 
 const getPriorityColor = (priority: string) => {
   switch (priority) {
     case "High":
-      return "bg-[#ffe1de] text-[#c22219]"
+      return "text-[#EF4D44] bg-[transparent] font-semibold"
     case "Medium":
-      return "bg-[#fff3d6] text-[#85640b]"
+      return "text-[#C29210] bg-[transparent] font-semibold"
     case "Low":
-      return "bg-[#e2e8f0] text-[#475569]"
+      return "text-[#1A8CFF] bg-[transparent] font-semibold"
     default:
-      return "bg-[#f6f6f6] text-[#757575]"
+      return "text-[#757575] bg-[transparent]"
   }
 }
 
@@ -362,7 +362,7 @@ export default function Component() {
                   </TableCell>
                   <TableCell className="text-[#757575] text-end">{job.submitted}</TableCell>
                   <TableCell className="text-center">
-                    <Badge variant="outline" className={`${getStatusColor(job.status)} border`}>
+                    <Badge variant="outline" className={`${getStatusColor(job.status)} `}>
                       {job.status}
                     </Badge>
                   </TableCell>
